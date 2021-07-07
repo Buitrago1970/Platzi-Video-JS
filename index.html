@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Platzi Video</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="src/css/home.css" />
-  <link rel="stylesheet" href="src/css/modal.css" />
-</head>
-<body>
-  <section class="home" id="home">
-    <div class="home-sidebar">
-      <div class="sidebar">
-        <div class="logo">
-          <figure class="logo-image">
-            <img src="src/images/platzi-video.png" alt="Platzi Video - la Plataforma de videos cheveres"/>
-          </figure>
-        </div>
-        <div class="sidebarPlaylist">
-          <h2 class="sidebarPlaylist-title">Mi Playlist <span class="btn warning">Escuchar Playlist</span> </h2>
-          <ol class="myPlaylist" id="MyPlaylist">
-            <li class="myPlaylist-item">
-              <a href="#">
-                <span>
-                  <img src="src/images/loader.gif" width="50" height="50" alt="">
-                </span>
-              </a>
-            </li>
-          </ol>
-        </div>
-        <div class="sidebarPlaylist">
-          <h2 class="sidebarPlaylist-title">Playlist de amigos</h2>
-          <ul class="playlistFriends" id="friendsList">
-            <li class="playlistFriends-item">
-              <a href="#">
-                 <img src="src/images/loader.gif" width="50" height="50" alt="">
-              </a>
-            </li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Platzi Video</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/home.css" />
+    <link rel="stylesheet" href="src/css/modal.css" />
+    <link rel="shortcut icon" href="favicon/favicon.png" />
+  </head>
+  <body>
+    <section class="home" id="home">
+      <div class="home-sidebar">
+        <div class="sidebar">
+          <div class="logo">
+            <figure class="logo-image">
+              <img
+                src="src/images/platzi-video.png"
+                alt="Platzi Video - la Plataforma de videos cheveres"
+              />
+            </figure>
+          </div>
+          <div class="sidebarPlaylist">
+            <h2 class="sidebarPlaylist-title">
+              Mi Playlist <span class="btn warning">Escuchar Playlist</span>
+            </h2>
+            <ol class="myPlaylist" id="MyPlaylist">
+              <li class="myPlaylist-item">
+                <a href="#">
+                  <span>
+                    <img
+                      src="src/images/loader.gif"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                  </span>
+                </a>
+              </li>
+            </ol>
+          </div>
+          <div class="sidebarPlaylist">
+            <h2 class="sidebarPlaylist-title">Playlist de amigos</h2>
+            <ul class="playlistFriends" id="friendsList">
+              <li class="playlistFriends-item">
+                <a href="#">
+                  <img
+                    src="src/images/loader.gif"
+                    width="50"
+                    height="50"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
-    </div>
-    <div class="home-primary">
-      <!-- <section class="primary"> -->
-        <div  class="primary-search">
+      <div class="home-primary">
+        <!-- <section class="primary"> -->
+        <div class="primary-search">
           <form action="" class="search" id="form">
-            <input type="text" name='name' placeholder="Buscar un artista o tema favorito"/>
+            <input
+              type="text"
+              name="name"
+              placeholder="Buscar un artista o tema favorito"
+            />
           </form>
         </div>
         <div class="primary-user">
           <div class="user">
             <p>
-              <img src="src/images/covers/gorillaz.jpg" alt=""/>
+              <img src="src/images/covers/gorillaz.jpg" alt="" />
               <span></span>
             </p>
           </div>
@@ -61,44 +83,40 @@
             <h3 class="primaryPlaylist-topic">A los golpes</h3>
             <h2 class="primaryPlaylist-title">Acción</h2>
             <div class="primaryPlaylist-list" id="action">
-              <img src="src/images/loader.gif" width="50" height="50" alt="">
+              <img src="src/images/loader.gif" width="50" height="50" alt="" />
             </div>
           </div>
           <div class="primaryPlaylist">
             <h3 class="primaryPlaylist-topic">Para llorar</h3>
             <h2 class="primaryPlaylist-title">Drama</h2>
             <div class="primaryPlaylist-list" id="drama">
-              <img src="src/images/loader.gif" width="50" height="50" alt="">
+              <img src="src/images/loader.gif" width="50" height="50" alt="" />
             </div>
           </div>
           <div class="primaryPlaylist">
             <h3 class="primaryPlaylist-topic">Dibujitos animados</h3>
             <h2 class="primaryPlaylist-title">Animación</h2>
             <div class="primaryPlaylist-list" id="animation">
-              <img src="src/images/loader.gif" width="50" height="50" alt="">
+              <img src="src/images/loader.gif" width="50" height="50" alt="" />
             </div>
           </div>
         </div>
-      <!-- </section> -->
+        <!-- </section> -->
+      </div>
+      <div class="home-featuring" id="featuring"></div>
+    </section>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+      <h1>Título de pelicula</h1>
+      <div class="modal-content">
+        <img src="" alt="" width="170" height="256" />
+        <p></p>
+      </div>
+      <div class="modal-buttons">
+        <button class="modal-btn primary" id="hide-modal">Cerrar Modal</button>
+      </div>
     </div>
-    <div class="home-featuring" id="featuring">
-
-    </div>
-</section>
-  <div class="overlay" id="overlay">
-  </div>
-  <div class="modal" id="modal">
-    <h1>Título de pelicula</h1>
-    <div class="modal-content">
-      <img src="" alt="" width="170" height="256">   
-      <p>
-      </p>
-    </div>
-    <div class="modal-buttons">
-      <button class="modal-btn primary" id="hide-modal">Cerrar Modal</button>
-    </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="src/js/home.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="src/js/home.js"></script>
+  </body>
 </html>
